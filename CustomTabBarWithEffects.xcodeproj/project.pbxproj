@@ -11,6 +11,11 @@
 		5136A92A26A54EEA00D999B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136A92926A54EEA00D999B9 /* ContentView.swift */; };
 		5136A92C26A54EEB00D999B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5136A92B26A54EEB00D999B9 /* Assets.xcassets */; };
 		5136A92F26A54EEB00D999B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5136A92E26A54EEB00D999B9 /* Preview Assets.xcassets */; };
+		5136A93926A5503800D999B9 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136A93826A5503800D999B9 /* CustomTabBar.swift */; };
+		5136A93C26A553E400D999B9 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136A93B26A553E400D999B9 /* TabViewModel.swift */; };
+		5136A93E26A55F1800D999B9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136A93D26A55F1800D999B9 /* Home.swift */; };
+		5136A94026A5604F00D999B9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136A93F26A5604F00D999B9 /* Card.swift */; };
+		5136A94226A56E1D00D999B9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136A94126A56E1D00D999B9 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		5136A92926A54EEA00D999B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5136A92B26A54EEB00D999B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5136A92E26A54EEB00D999B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5136A93826A5503800D999B9 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		5136A93B26A553E400D999B9 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
+		5136A93D26A55F1800D999B9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		5136A93F26A5604F00D999B9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5136A94126A56E1D00D999B9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,9 @@
 			children = (
 				5136A92726A54EEA00D999B9 /* CustomTabBarWithEffectsApp.swift */,
 				5136A92926A54EEA00D999B9 /* ContentView.swift */,
+				5136A93A26A553B400D999B9 /* ViewModel */,
+				5136A93626A54FE300D999B9 /* Model */,
+				5136A93526A54FD800D999B9 /* View */,
 				5136A92B26A54EEB00D999B9 /* Assets.xcassets */,
 				5136A92D26A54EEB00D999B9 /* Preview Content */,
 			);
@@ -65,6 +78,32 @@
 				5136A92E26A54EEB00D999B9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5136A93526A54FD800D999B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5136A93826A5503800D999B9 /* CustomTabBar.swift */,
+				5136A93D26A55F1800D999B9 /* Home.swift */,
+				5136A94126A56E1D00D999B9 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5136A93626A54FE300D999B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5136A93F26A5604F00D999B9 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5136A93A26A553B400D999B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5136A93B26A553E400D999B9 /* TabViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5136A93C26A553E400D999B9 /* TabViewModel.swift in Sources */,
+				5136A94026A5604F00D999B9 /* Card.swift in Sources */,
 				5136A92A26A54EEA00D999B9 /* ContentView.swift in Sources */,
+				5136A94226A56E1D00D999B9 /* DetailView.swift in Sources */,
+				5136A93E26A55F1800D999B9 /* Home.swift in Sources */,
+				5136A93926A5503800D999B9 /* CustomTabBar.swift in Sources */,
 				5136A92826A54EEA00D999B9 /* CustomTabBarWithEffectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +321,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +351,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
